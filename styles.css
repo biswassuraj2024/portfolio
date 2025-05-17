@@ -1,0 +1,158 @@
+/* General font and layout */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar spacing on small screens */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  header div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hero section image responsiveness */
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .text-xl {
+    font-size: 1.125rem;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .text-3xl {
+    font-size: 1.75rem;
+  }
+
+  .py-20 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Projects grid: make cards stack on small screens */
+@media (max-width: 768px) {
+  #projects .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Skills section grid */
+@media (max-width: 768px) {
+  #skills .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Education & POR grid responsiveness */
+@media (max-width: 768px) {
+  #education .grid,
+  #por .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact links stacking */
+@media (max-width: 640px) {
+  #contact .flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #contact a {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  /* Projects Section */
+  #projects .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Skills Section */
+  #skills .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Education Section */
+  #education .grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  #education .col-span-2 {
+    grid-column: span 1 !important;
+    display: block !important;
+  }
+
+  /* POR Section */
+  #por .grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  #por .col-span-2 {
+    grid-column: span 1 !important;
+    display: block !important;
+  }
+}
+footer a {
+  display: inline-flex; /* or flex */
+  align-items: center;  /* vertically center icon and text */
+  gap: 0.5rem;          /* space between icon and text */
+  text-decoration: none; 
+  color: inherit;        /* inherit color */
+}
+
+
+  #animated-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: #4f46e5; /* Tailwind indigo-600 */
+    margin-left: 2px;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+

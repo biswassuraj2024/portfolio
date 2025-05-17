@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj Biswas | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" class="css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-indigo-500 via-purple-600 to-indigo-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 relative flex items-center">
+      <!-- Site Name -->
+      <h1 class="text-xl font-bold leading-none">SURAJ BISWAS</h1>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="md:hidden absolute top-4 right-4 inline-flex focus:outline-none"
+        aria-label="Toggle menu">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav id="menu" class="hidden md:flex space-x-6 ml-auto">
+        <a href="#about" class="hover:text-indigo-200">About</a>
+        <a href="#projects" class="hover:text-indigo-200">Projects</a>
+        <a href="#skills" class="hover:text-indigo-200">Skills</a>
+        <a href="#education" class="hover:text-indigo-200">Education</a>
+        <a href="#por" class="hover:text-indigo-200">POR</a>
+        <a href="#contact" class="hover:text-indigo-200">Contact</a>
+      </nav>
+
+      <!-- Mobile dropdown -->
+      <nav id="mobile-menu"
+        class="hidden absolute top-full right-4 mt-2 w-48 bg-indigo-800 rounded-md shadow-lg py-2 text-right md:hidden z-50">
+        <a href="#about" class="block px-4 py-2 hover:bg-indigo-600">About</a>
+        <a href="#projects" class="block px-4 py-2 hover:bg-indigo-600">Projects</a>
+        <a href="#skills" class="block px-4 py-2 hover:bg-indigo-600">Skills</a>
+        <a href="#education" class="block px-4 py-2 hover:bg-indigo-600">Education</a>
+        <a href="#por" class="block px-4 py-2 hover:bg-indigo-600">POR</a>
+        <a href="#contact" class="block px-4 py-2 hover:bg-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-b from-indigo-50 to-white w-full">
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="profile"
+      class="mx-auto w-32 h-32 rounded-full mb-4 border-4 border-indigo-500" />
+    <h2
+      class="text-3xl md:text-5xl font-bold text-indigo-600 flex flex-col md:flex-row items-center md:items-baseline justify-center gap-2">
+      <span class="whitespace-nowrap text-black">Hello I am</span>
+      <span id="animated-text"
+        class="font-mono w-[18ch] overflow-hidden whitespace-nowrap text-center md:text-left"></span>
+    </h2>
+
+    <p class="text-xl text-gray-600 mt-2">Undergraduate Student @ IIT KGP</p>
+    <a href="#contact"
+      class="mt-6 inline-block px-6 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition">Get
+      in Touch</a>
+  </section>
+
+  <!-- About -->
+  <section class="bg-gradient-to-b from-indigo-50 to-white w-full">
+    <div id="about" class="text-gray-800 max-w-4xl mx-auto py-16 px-4">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-4 text-center">About Me</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Hello guys, I am Suraj Biswas, a passionate undergraduate student at IIT Kharagpur. I am currently pursuing
+        my B.Tech in Ocean Engineering and Naval Architecture. I have a keen interest in web development and
+        software engineering. I love to learn new technologies and apply them to real-world problems. In my free
+        time, I enjoy reading books, playing video games, and exploring new places.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gradient-to-b from-indigo-50 to-white py-16 px-4 w-full ">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-10 text-center">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Portfolio Website Card (actual link) -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-700">Portfolio Website</h3>
+          <p class="text-gray-600">A personal portfolio built using HTML, CSS, and JavaScript. Deployed using GitHub
+            Pages.</p>
+          <a href="#" class="text-indigo-600 inline-block mt-3 hover:underline" target="_blank">View Project →</a>
+        </div>
+
+        <!-- To-Do App Card (alert) -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-700">To-Do App</h3>
+          <p class="text-gray-600">A responsive to-do list with features like dark mode and local storage.</p>
+          <a href="#" class="text-indigo-600 inline-block mt-3 hover:underline"
+            onclick="alert('Currently not available'); return false;">View Project →</a>
+        </div>
+
+        <!-- Weather App Card (alert) -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2 text-purple-700">Weather App</h3>
+          <p class="text-gray-600">An app that shows real-time weather info using an API and responsive design.</p>
+          <a href="#" class="text-indigo-600 inline-block mt-3 hover:underline"
+            onclick="alert('Currently not available'); return false;">View Project →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-4 bg-gradient-to-b from-indigo-50 to-white text-gray-800 ">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-10 text-center">Skills</h2>
+      <div class="grid md:grid-cols-2 gap-10 text-left">
+
+        <!-- Programming Languages -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-4 text-purple-700">Programming Languages</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>C</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+
+          </ul>
+        </div>
+
+        <!-- Software Tools -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-4 text-purple-700 ">Software Tools</h3>
+          <ul class="list-disc list-inside space-y-2 ">
+            <li>VS Code</li>
+            <li>Git & GitHub</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Premiere Pro</li>
+            <!-- Add more as needed -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Education -->
+
+  <section id="education" class="py-16 px-4 bg-gradient-to-b from-indigo-50 to-white text-gray-800 w-full ">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-indigo-600 mb-10 text-center">Education</h2>
+      <div class="grid md:grid-cols-2 gap-10 text-left">
+
+        <!-- Education Card -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition flex flex-col">
+          <h3 class="text-xl font-semibold mb-2 text-purple-700">IIT Kharagpur</h3>
+          <p class="text-gray-600">B.Tech in Ocean Engineering and Naval Architecture (2024 - Present)
+            <br><span class="font-semibold text-purple-700">CGPA: 8.29</span>
+          </p>
+        </div>
+
+        <!-- Education Card -->
+        <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition flex flex-col">
+          <h3 class="text-xl font-semibold mb-2 text-purple-700">Purba Barasat Adarsha Bidyapeeth</h3>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Completed 12th Grade with Science (2021-2023)<br />
+            <span class="font-semibold text-purple-700">Percentage: 94.8%</span>
+          </p>
+        </div>
+        <!-- Education Card -->
+        <div class="col-span-2 flex justify-center">
+          <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition flex flex-col max-w-md w-full">
+            <h3 class="text-xl font-semibold mb-2 text-purple-700">Purba Barasat Adarsha Bidyapeeth</h3>
+            <p class="text-gray-600 text-base leading-relaxed">
+              Completed 10th Grade with Science (2021)<br />
+              <span class="font-semibold text-purple-700">Percentage: 98.2%</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br><br> <br>
+    </div>
+    </div>
+    </div>
+    <!-- POR -->
+    <section id="por" class="py-16 px-4 bg-gradient-to-b from-indigo-50 to-white text-gray-800 w-full ">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl font-bold text-indigo-600 mb-10 text-center">Positions of Responsibility</h2>
+        <div class="grid md:grid-cols-2 gap-10 text-left">
+
+          <!-- POR Card -->
+          <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-purple-700">KSHITIJ-Design and Media Associate Member</h3>
+            <p class="text-gray-600">Member (2024 - Present)</p>
+          </div>
+
+          <!-- POR Card -->
+          <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-purple-700">Heads-Esports Club, IIT Kharagpur</h3>
+            <p class="text-gray-600">Member (2024 - Present)</p>
+          </div>
+
+          <!-- POR Card -->
+          <div class="col-span-2 flex justify-center">
+            <div class="bg-white shadow rounded-xl p-5 hover:shadow-lg transition flex flex-col max-w-md w-fulr">
+              <h3 class="text-xl font-semibold mb-2 text-purple-700">NAROES-Design Associate Member</h3>
+              <p class="text-gray-600">Member (2024 - Present)</p>
+            </div>
+          </div>
+        </div>
+        <br><br> <br>
+      </div>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16 px-4 bg-gradient-to-b from-indigo-50 to-white text-gray-800">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl font-bold text-indigo-600 mb-10">Contact Me</h2>
+
+          <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 gap-6 text-lg">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/suraj-biswas01072005/" target="_blank"
+              class="inline-flex items-center gap-2 hover:text-indigo-600 transition-colors">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt="LinkedIn" class="w-6 h-6" />
+              Suraj Biswas
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/biswassuraj658/" target="_blank"
+              class="inline-flex items-center gap-2 hover:text-pink-500 transition-colors">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+                class="w-6 h-6" />
+              biswassuraj658
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:biswassuraj658@gmail.com"
+              class="inline-flex items-center gap-2 hover:text-red-500 transition-colors">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email"
+                class="w-6 h-6" />
+              biswassuraj658@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Footer -->
+      <footer class="bg-white py-6 text-center text-sm text-gray-500 border-t">
+        © 2025 Suraj Biswas. All rights reserved.
+      </footer>
+      <script src="script.js"></script>
+</body>
+
+</html>
